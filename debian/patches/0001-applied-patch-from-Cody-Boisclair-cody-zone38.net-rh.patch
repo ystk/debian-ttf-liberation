@@ -1,0 +1,112 @@
+From af06e642b6c20171401d61c38a0594055682ec20 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?=E0=A4=AA=E0=A5=8D=E0=A4=B0=E0=A4=B5=E0=A4=BF=E0=A4=A3=20=E0=A4=B8=E0=A4=BE=E0=A4=A4=E0=A4=AA=E0=A5=81=E0=A4=A4=E0=A5=87?= <pravin.d.s@gmail.com>
+Date: Mon, 2 Aug 2010 12:03:54 +0530
+Subject: [PATCH] applied patch from  Cody Boisclair <cody@zone38.net>, rhbz 620273"
+
+---
+ source/src/LiberationMono-Bold.sfd       |    8 ++++----
+ source/src/LiberationMono-BoldItalic.sfd |    6 +++---
+ source/src/LiberationMono-Italic.sfd     |    8 ++++----
+ source/src/LiberationMono-Regular.sfd    |    6 +++---
+ 4 files changed, 14 insertions(+), 14 deletions(-)
+
+--- ttf-liberation-1.05.2.20091019.orig/src/LiberationMono-Bold.sfd
++++ ttf-liberation-1.05.2.20091019/src/LiberationMono-Bold.sfd
+@@ -19,7 +19,7 @@ OS2Version: 3
+ OS2_WeightWidthSlopeOnly: 0
+ OS2_UseTypoMetrics: 1
+ CreationTime: 1095817380
+-ModificationTime: 1205762491
++ModificationTime: 1280703506
+ PfmFamily: 17
+ TTFWeight: 700
+ TTFWidth: 5
+@@ -3226,13 +3226,13 @@ NameList: Adobe Glyph List
+ DisplaySize: -24
+ AntiAlias: 1
+ FitToEm: 1
+-WinInfo: 40 40 16
++WinInfo: 0 40 16
+ BeginChars: 1114127 663
+ 
+ StartChar: .notdef
+ Encoding: 1114112 -1 0
+-Width: 748
+-Flags: W
++Width: 1229
++Flags: HW
+ TtInstrs:
+ PUSHB_2
+  1
+--- ttf-liberation-1.05.2.20091019.orig/src/LiberationMono-BoldItalic.sfd
++++ ttf-liberation-1.05.2.20091019/src/LiberationMono-BoldItalic.sfd
+@@ -19,7 +19,7 @@ OS2Version: 3
+ OS2_WeightWidthSlopeOnly: 0
+ OS2_UseTypoMetrics: 1
+ CreationTime: 1095817380
+-ModificationTime: 1205762349
++ModificationTime: 1280703529
+ PfmFamily: 17
+ TTFWeight: 700
+ TTFWidth: 5
+@@ -2842,8 +2842,8 @@ BeginChars: 1114127 663
+ 
+ StartChar: .notdef
+ Encoding: 1114112 -1 0
+-Width: 748
+-Flags: W
++Width: 1229
++Flags: HW
+ TtInstrs:
+ PUSHB_2
+  1
+--- ttf-liberation-1.05.2.20091019.orig/src/LiberationMono-Italic.sfd
++++ ttf-liberation-1.05.2.20091019/src/LiberationMono-Italic.sfd
+@@ -19,7 +19,7 @@ OS2Version: 3
+ OS2_WeightWidthSlopeOnly: 0
+ OS2_UseTypoMetrics: 1
+ CreationTime: 1095817380
+-ModificationTime: 1205755605
++ModificationTime: 1280703479
+ PfmFamily: 17
+ TTFWeight: 400
+ TTFWidth: 5
+@@ -3412,13 +3412,13 @@ NameList: Adobe Glyph List
+ DisplaySize: -24
+ AntiAlias: 1
+ FitToEm: 1
+-WinInfo: 40 40 16
++WinInfo: 0 40 16
+ BeginChars: 1114127 663
+ 
+ StartChar: .notdef
+ Encoding: 1114112 -1 0
+-Width: 748
+-Flags: W
++Width: 1229
++Flags: HW
+ TtInstrs:
+ PUSHB_2
+  1
+--- ttf-liberation-1.05.2.20091019.orig/src/LiberationMono-Regular.sfd
++++ ttf-liberation-1.05.2.20091019/src/LiberationMono-Regular.sfd
+@@ -19,7 +19,7 @@ OS2Version: 3
+ OS2_WeightWidthSlopeOnly: 0
+ OS2_UseTypoMetrics: 1
+ CreationTime: 1095817380
+-ModificationTime: 1205755605
++ModificationTime: 1280703432
+ PfmFamily: 17
+ TTFWeight: 400
+ TTFWidth: 5
+@@ -3212,8 +3212,8 @@ BeginChars: 1114127 663
+ 
+ StartChar: .notdef
+ Encoding: 1114112 -1 0
+-Width: 748
+-Flags: W
++Width: 1229
++Flags: HW
+ TtInstrs:
+ PUSHB_2
+  1

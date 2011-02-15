@@ -1,0 +1,42 @@
+Description: Upstream changes introduced in version 1.05.2.20091019-4squeeze1
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ ttf-liberation (1.05.2.20091019-4squeeze1) stable-proposed-updates; urgency=low
+ .
+   * Apply a patch by Cody Boisclair backported from upstream git that fixes
+     the character widths in Liberation Mono so that it is correctly detected as
+     monospaced (rhbz 620273, Closes: #567806).
+   * Add myself to Uploaders.
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Fabian Greffrath <fabian+debian@greffrath.com>
+Bug-Debian: http://bugs.debian.org/567806
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- ttf-liberation-1.05.2.20091019.orig/Makefile
++++ ttf-liberation-1.05.2.20091019/Makefile
+@@ -34,8 +34,8 @@ dist-ttf: clean-ttf build
+ clean: clean-ttf clean-src
+ 
+ clean-ttf:
+-	rm -rf ttf liberation-fonts-ttf-*
++	rm -rf ttf liberation-fonts-ttf-* || true
+ 
+ 
+ clean-src:
+-	rm *.tar.gz
++	rm *.tar.gz || true
